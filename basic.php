@@ -5,6 +5,7 @@ $add=$hello%$number;
 $hello="123";
 //echo $add;
 //var_dump($hello);
+
 // define('ABC','google.com');
 // define('ABC','fg');
 // echo $hello;
@@ -55,7 +56,7 @@ $hello="123";
 $x = 10;  
 $y = 10;
 
-$check=($x<=>$y);0 ,-1 ,1
+$check=($x<=>$y);
 
 switch($check){
   case -1:{
