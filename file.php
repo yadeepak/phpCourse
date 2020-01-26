@@ -5,7 +5,7 @@
 <?php 
 //  include 'mytextfile.txt';
 
-
- echo $fileData=fopen('mytextfile.txt','r+');
+//     chmod('mytextfile.txt',0677);
+//   $fileData=fopen('mytextfile.txt','r+');
  
 ?>

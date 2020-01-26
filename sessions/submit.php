@@ -1,5 +1,7 @@
 <?php 
 session_start();
+
+//echo $_SESSION['loggedin'];
 if($_SESSION['loggedin']!=''){
 echo "welcome".$_SESSION['loggedin'];
 }else{
