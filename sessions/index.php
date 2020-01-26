@@ -13,10 +13,7 @@ if(isset($_SESSION['loggedin'])){
 
 
 <form action="" method="post">
-<?php 
 
-
-?>
   <div style="margin-bottom: 25px" class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="login-username" type="text" class="form-control" name="username" value=""
@@ -27,16 +24,6 @@ if(isset($_SESSION['loggedin'])){
     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
     <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
   </div>
-
-
-
-  <!-- <div class="input-group">
-    <div class="checkbox">
-      <label>
-        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-      </label>
-    </div>
-  </div> -->
 
 
   <div style="margin-top:10px" class="form-group">
@@ -52,7 +39,7 @@ if(isset($_SESSION['loggedin'])){
   </div>
 </form>
 <?php 
-if(isset($_POST['submit'])){
+if(isset($_POST['username'])){
   // exit;
  if($_POST['username']=='' ||  $_POST['password']==''){
   echo "Username or password can not be empty";
