@@ -1,36 +1,41 @@
 <?php
+class Vehicle {
 
-class Car {
+   protected $wheel=4;
 
-    private  $engine='secret';
-    function __construct($wheel){
-    $this->starring='normal';
-     $this->wheel=$wheel;
-    }   
-
-    // function getStarring(){
-    //     echo $this->starring;
-    // }
-
-    // function getSecret(){
-    //     echo $this->secret;
-    // }
+     function __construct($type){
+        $this->type=$type;
+    }
 
     function getWheel(){
-        echo $this->wheel;
+       echo $this->wheel;
     }
+
+    function getType(){
+       
+    }
+
+    function getStarring($side = 'right'){
+        echo $side;
+    }
+  
+}
+
+class NewVehicle extends Vehicle{
+public $newWheel=6;
+
+function getWheel()
+{
+    echo $this->newWheel;
+}
+
 
 }
 
-$carobj=new Car;
 
-$carobj2=new Car("4");
-
-// echo $carobj->getStarring();
-// echo $carobj->starring;
-echo $carobj->wheel;
-echo $carobj2->wheel;
-
-//$carobj2->getWheel();
+//$newObj->getWheel();
+$newObj = new NewVehicle("car");
+$newObj->getWheel();
+//$newObj->getType();
 
 ?>
