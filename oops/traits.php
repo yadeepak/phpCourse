@@ -24,6 +24,9 @@ trait sweets {
 class Foods {
     use Pureveg , nonVeg , sweets;
 
+    function hoteName(){
+        
+    }
 
 }
 
